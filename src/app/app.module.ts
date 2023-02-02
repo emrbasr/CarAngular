@@ -8,12 +8,14 @@ import { ProductComponent } from './components/car/product.component';
 import { NaviComponent } from './components/navi/navi.component';
 import { CategoryComponent } from './components/category/category.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
     NaviComponent,
-    CategoryComponent
+    CategoryComponent,
+  
   ],
   imports: [
     BrowserModule,
