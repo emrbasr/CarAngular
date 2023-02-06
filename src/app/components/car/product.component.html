@@ -1,4 +1,15 @@
-<table>
+<div *ngIf="dataLoaded==false" class="spinner-grow" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+<table *ngIf="dataLoaded==true" class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Araba Ismi</th>
+            <th>Fiyatı</th>
+            <th>Açıklama</th>
+        </tr>
+    </thead>
     <tr *ngFor="let car of cars">
         <td>{{car.id}}</td>
         <td>{{car.carName}}</td>
